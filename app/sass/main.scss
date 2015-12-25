@@ -17,10 +17,11 @@
 		MAIN STYLE
 \*********************************************/
 body {
-	font-family: sans-serif;
-	font-size: em(16);
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 	min-width: 320px;
 	position: relative;
+	color: #fff;
 }
 
 .hidden {
@@ -40,11 +41,92 @@ body {
 /*********************************************\
 		TYPOGRAPHY
 \*********************************************/
+h1 {
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 32px;
+	font-weight: 900;
+}
 
+h2 {
+	margin: 0;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
 /*********************************************\
 		SECTIONS
 \*********************************************/
+#about {min-height: 405px;}
+.section-item {
+	padding: 70px 0;
+	.section-item-wrap{
+		text-align: center;
+	}
+	.section-item__title {
+	color: $dark-text;
+	margin-bottom: 15px;
+	}
+	.section-item__text{
+		text-align: left;
+		color: $dark-text;
+		margin-bottom: 30px;
+	}
+}
 
+.video {
+	position: relative;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/video/video-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&::before {
+	 @extend .before;
+	}
+	.button-play {
+		margin: 0 auto;
+		margin-top: 200px;
+		margin-bottom: 30px;
+		display: block;
+		width: 100px;
+		height: 100px;
+		border: 3px solid #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		background-image: url(../img/video/play.svg);
+		background-repeat: no-repeat;
+		background-position: 55% 50%;
+		&:hover {
+			border-color: $main-color;
+		}
+	}
+	.play-text {
+		display: block;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		color: #fff;
+	}
+}
+
+#expertise {
+	width: 100%;
+	min-height: 755px;
+	text-align: center;
+	.section-item__desc {
+		display: block;
+		margin-bottom: 15px;
+		font-family: "Playfair Display";
+		font-size: 14px;
+		font-weight: 400;
+		color: #2f2d35;
+		opacity: 0.75;
+	}
+	.separator {
+		margin-bottom: 50px;
+	}
+}
 /*********************************************\
 		@IMPORT FOOTER
 \*********************************************/
