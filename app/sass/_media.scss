@@ -17,7 +17,31 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.navigation { display: none;}
+	.mobnav {
+		position: absolute;
+		display: none;
+		right: 0;
+		top: 20px;
+		min-width:200px;
+		max-width: 320px;
+		text-align: right;
+		background-color: #322257;
+		li {
+			display: block;
+			margin: 0;
+			float: none;
+		}
+		a {
+			display: block;
+			font-size: 20px;
+			padding-right: 20px;
+		}
+		a:hover {
+			background-color: #47396b;
+			color: #fff;
+		}
 	}
+}
 
 
 
@@ -73,9 +97,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	
+	.mob-menu {display: none;}
+	.navigation { display: block !important;}
 }
-
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {

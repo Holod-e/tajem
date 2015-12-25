@@ -69,6 +69,16 @@ body {
 	}
 }
 
+.mob-menu {
+	display: inline-block;
+	margin-top: 15px;
+	width: 30px;
+	height: 30px;
+	float: right;
+	font-size: 30px;
+	color: $main-color;
+}
+
 .header-main {
 	margin-top: 160px;
 	text-align: center;

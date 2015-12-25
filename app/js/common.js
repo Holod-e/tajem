@@ -21,6 +21,9 @@ $(document).ready(function() {
 		$('.header').css("background-image", "url(../img/header/header-bg4.jpg)");
 	});
 
+	$('.mob-menu').click(function() {
+		$('.mobnav').fadeToggle();
+	});
 
 	//Check
 	console.log('Done!');
