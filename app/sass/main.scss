@@ -53,20 +53,27 @@ h2 {
 	font-size: 22px;
 	font-weight: 700;
 }
+
+h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+	color: #413d4b;
+}
 /*********************************************\
 		SECTIONS
 \*********************************************/
 #about {min-height: 405px;}
-.section-item {
+.section {
 	padding: 70px 0;
-	.section-item-wrap{
+	.section-wrap{
 		text-align: center;
 	}
-	.section-item__title {
+	.section__title {
 	color: $dark-text;
 	margin-bottom: 15px;
 	}
-	.section-item__text{
+	.section__text{
 		text-align: left;
 		color: $dark-text;
 		margin-bottom: 30px;
@@ -114,7 +121,7 @@ h2 {
 	width: 100%;
 	min-height: 755px;
 	text-align: center;
-	.section-item__desc {
+	.section__desc {
 		display: block;
 		margin-bottom: 15px;
 		font-family: "Playfair Display";
@@ -126,6 +133,23 @@ h2 {
 	.separator {
 		margin-bottom: 50px;
 	}
+	.section-item__img {
+		margin: 40px 0;
+	}
+
+	.section-item__title {
+		margin: 0;
+	}
+	.section-item__paragraph {
+		padding: 0 30px;
+		padding-bottom: 35px;
+		color: #333;
+		opacity: 0.75;
+		margin-bottom: 0;
+	}
+	.left-item { border-right: 1px solid #ebebeb; }
+	.right-item { border-left: 1px solid #ebebeb; }
+	.top-items { border-bottom: 1px solid #ebebeb; }
 }
 /*********************************************\
 		@IMPORT FOOTER
