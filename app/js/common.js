@@ -1,5 +1,27 @@
 $(document).ready(function() {
 
+	$('#bg1').click(function() {
+		$(".dotnav .active").removeClass("active");
+		$(this).addClass("active");
+		$('.header').css("background-image", "url(../img/header/header-bg1.jpg)");
+	});
+	$('#bg2').click(function() {
+		$(".dotnav .active").removeClass("active");
+		$(this).addClass("active");
+		$('.header').css("background-image", "url(../img/header/header-bg2.jpg)");
+	});
+	$('#bg3').click(function() {
+		$(".dotnav .active").removeClass("active");
+		$(this).addClass("active");
+		$('.header').css("background-image", "url(../img/header/header-bg3.jpg)");
+	});
+	$('#bg4').click(function() {
+		$(".dotnav .active").removeClass("active");
+		$(this).addClass("active");
+		$('.header').css("background-image", "url(../img/header/header-bg4.jpg)");
+	});
+
+
 	//Check
 	console.log('Done!');
 
