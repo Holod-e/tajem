@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	//слайдер фона хедера сайта
 	$('#bg1').click(function() {
 		$(".dotnav .active").removeClass("active");
 		$(this).addClass("active");
@@ -20,11 +21,11 @@ $(document).ready(function() {
 		$(this).addClass("active");
 		$('.header').css("background-image", "url(../img/header/header-bg4.jpg)");
 	});
-
+	//мобильное меню
 	$('.mob-menu').click(function() {
 		$('.mobnav').fadeToggle();
 	});
-
+	//карусель
 	$("#owl-1, #owl-2").owlCarousel({
 
       autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -35,6 +36,8 @@ $(document).ready(function() {
 
   });
 
+	//slider scale
+	
 
 	//Check
 	console.log('Done!');
