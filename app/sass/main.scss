@@ -201,6 +201,36 @@ h5 {
 		margin-bottom: 70px;
 	}
 }
+
+#works {
+	min-height: 600px;
+	width: 100%;
+	text-align: center;
+	.section__title{ 
+		margin: 0 0 70px 0;
+		color: #413d4b; 
+	}
+	.btn { margin: 70px 0;}
+	.section-text {
+		color: #413d4b;
+		&:hover { color: $main-color;}
+	}
+	.works-second-row {
+		display: block;
+	}
+}
+#owl-1 .item,
+#owl-2 .item {
+  margin: 0;
+}
+
+#owl-1 .item img, #owl-2 .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
 /*********************************************\
 		@IMPORT FOOTER
 \*********************************************/
