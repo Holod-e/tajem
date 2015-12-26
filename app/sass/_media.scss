@@ -16,6 +16,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.trands {display: none;}
 	.navigation { display: none;}
 	.mobnav {
 		position: absolute;

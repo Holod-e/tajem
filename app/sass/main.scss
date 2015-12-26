@@ -303,7 +303,46 @@ h5 {
 #contact {
 	width: 100%;
 	min-width: 650px;
+	.section__title {
+		margin-bottom: 30px;
+	}
+	input,
+	textarea {
+		width: 95%;
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		margin-right: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		font-family: 'Roboto';
+		font-size: 18px;
+		color: $dark-text;
+		font-weight: 900;
+		resize: none;
+	}
+	& input::placeholder,
+	& textarea::placeholder {
+		font-size: 14px;
+		font-family: 'Roboto';
+		color: #413d4b;
+		font-weight: 300;
+		opacity: 0.5;
+	}
+	form {margin-bottom: 50px;}
+	.left-list,
+	.right-list {
+		display: block;
+		width: 45%;
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style-type: none;}
+	.right-list {float: right;}
+	& li {
+		margin-bottom: 50px;
+		text-align: center;
+	}
 }
+
 
 /*********************************************\
 		@IMPORT FOOTER
