@@ -52,6 +52,7 @@ h2 {
 	font-family: 'Playfair Display', sans-serif;
 	font-size: 22px;
 	font-weight: 700;
+	line-height: 22px;
 }
 
 h5 {
@@ -59,6 +60,7 @@ h5 {
 	font-size: 14px;
 	font-weight: 900;
 	color: #413d4b;
+	margin: 0;
 }
 /*********************************************\
 		SECTIONS
@@ -71,12 +73,19 @@ h5 {
 	}
 	.section__title {
 	color: $dark-text;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 	}
 	.section__text{
 		text-align: left;
 		color: $dark-text;
 		margin-bottom: 30px;
+	}
+	.section__desc {
+		display: block;
+		margin-bottom: 15px;
+		font-family: "Playfair Display";
+		font-size: 14px;
+		font-weight: 400;
 	}
 }
 
@@ -118,6 +127,7 @@ h5 {
 }
 
 #expertise {
+	position: relative;
 	width: 100%;
 	min-height: 755px;
 	text-align: center;
@@ -130,16 +140,9 @@ h5 {
 		color: #2f2d35;
 		opacity: 0.75;
 	}
-	.separator {
-		margin-bottom: 50px;
-	}
-	.section-item__img {
-		margin: 40px 0;
-	}
-
-	.section-item__title {
-		margin: 0;
-	}
+	.separator {margin-bottom: 50px;}
+	.section-item__img {margin: 40px 0;}
+	.section-item__title {margin: 0;}
 	.section-item__paragraph {
 		padding: 0 30px;
 		padding-bottom: 35px;
@@ -150,6 +153,53 @@ h5 {
 	.left-item { border-right: 1px solid #ebebeb; }
 	.right-item { border-left: 1px solid #ebebeb; }
 	.top-items { border-bottom: 1px solid #ebebeb; }
+}
+
+#team {
+	position: relative;
+	min-height: 712px;
+	width: 100%;
+	text-align: center;
+	background-image: url(../img/team/team-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&::before { @extend .before; }
+	.section__title {color: #fff; }
+	.section__desc {color: #f9f9f9; }
+	.separator {
+		height: 2px;
+		background-color: #fff;
+		opacity: 0.2;
+		margin-bottom: 45px;
+	}
+	.section-item {
+		border: 1px solid #e1e1e1;
+		margin-bottom: 70px;
+	}
+	& .section-item__img {
+		background-color: #fff;
+		height: 230px;
+		margin-bottom: 20px;
+	}
+	.section-item__title {
+		color: #fff;
+		margin-bottom: 8px;
+	}
+	.section-item__info {
+		display: block;
+		margin: 0 0 21px 0;
+		color: #fafafa;
+		font-weight: 300;
+		opacity: 0.7;
+		font-size: 13px;
+	}
+	.bottom__text {
+		color: #f3f3f3;
+		margin:0 0 25px 0;
+	}
+	.btn {
+		margin-bottom: 70px;
+	}
 }
 /*********************************************\
 		@IMPORT FOOTER
