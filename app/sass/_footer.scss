@@ -1,0 +1,111 @@
+footer {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 400px;
+	padding: 70px 0;
+	background-image: url(../img/footer/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&::before { @extend .before;}
+	.footer-title {
+		margin-top: 30px;
+		margin-bottom: 35px;
+		font-family: "Roboto";
+		font-size: 15px;
+		font-weight: 900;
+		color: white;
+	}
+	.logo { margin-bottom: 25px;}
+	.footer-text {
+		margin: 0;
+	}
+	.adress {
+		display: block;
+		padding-left: 30px;
+		margin-bottom: 25px;
+		background: transparent url('../img/footer/loc.png') left top no-repeat;
+		color: white;
+	}
+	.tel {
+		padding-left: 30px;
+		color: #fff;
+		background: transparent url('../img/footer/phone.png') left top no-repeat;
+	}
+	.subscribe {
+		display: inline-block;
+		float: left;
+		margin-right: 10px;
+		height: 45px;
+		width: 75%;
+		border: 1px solid rgba(255, 255, 255, .5);
+		background-color: transparent;
+		padding: 15px;
+	}
+	form {
+		display: block;
+		margin-bottom: 25px;
+		width: 100%;
+		height: 45px;
+	}
+	button {
+		display: inline-block;
+		float: left;
+		width: 20%;
+		height: 45px;
+		border: 1px solid white;
+		background-color: #fff;
+		opacity: 0.5;
+		background-image: url(../img/footer/plane.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		&:hover {
+			background-color: $main-color;
+		}
+	}
+	.social-icons {
+		display: block;
+		margin-bottom: 70px;
+	}
+	.social {
+		display: inline-block;
+		margin-right: 8px;
+		width: 35px;
+		height: 35px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		transition: all 0.3s linear;
+		&:hover {
+			background-color: $main-color;
+		}
+	}
+	.fb {background-image: url(../img/footer/fb.svg);}
+	.tw {background-image: url(../img/footer/tw.svg);}
+	.dr {background-image: url(../img/footer/dr.svg);}
+	.is {background-image: url(../img/footer/is.svg);}
+	.gp {background-image: url(../img/footer/gp.svg);}
+	.yt {background-image: url(../img/footer/yt.svg);}
+
+	.copyright {
+		float: right;
+	}
+	span {	display: inline-block;
+			color: white;
+			font-weight: 400;
+			font-family: 'Roboto';
+			font-size: 14px;
+		}
+	.help-links {text-align: left;}
+	.help-links a {
+		font-weight: 400;
+		color: white;
+		margin-right: 30px;
+		transition: all 0.3s linear;
+		&:hover {
+			color: $main-color;
+		}
+		&:last-child { margin-right: 0;}
+	}
+}
