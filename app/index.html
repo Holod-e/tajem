@@ -7,7 +7,7 @@
 	<!-- SEO -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="author" content="">
+	<meta name="author" content="Evhenii Holodniak">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- GOOGLE FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300,100,900|Hammersmith+One' rel='stylesheet' type='text/css'>
 	
 	<!-- build:css css/libs.min.css -->
@@ -62,14 +63,14 @@
 					<!--HEADER-NAVIGATION-->
 					<div class="col-sm-10 col-xs-8">
 						<nav>
-							<ul class="navigation tr mobnav">
+							<ul class="navigation tr mobnav" id="menu">
 								<li><a href="#" class="active">home</a></li>
-								<li><a href="#">about</a></li>
-								<li><a href="#">expertise</a></li>
-								<li><a href="#">teams</a></li>
-								<li><a href="#">works</a></li>
-								<li><a href="#">people say</a></li>
-								<li><a href="#">contact</a></li>
+								<li><a href="#about">about</a></li>
+								<li><a href="#expertise">expertise</a></li>
+								<li><a href="#team">teams</a></li>
+								<li><a href="#works">works</a></li>
+								<li><a href="#testimonials">people say</a></li>
+								<li><a href="#contact">contact</a></li>
 							</ul>
 						</nav>
 						<a href="#" class="mob-menu"><i class="fa fa-bars"></i></a>
@@ -121,14 +122,19 @@
 					</div>
 				</div>
 				<div class="col-sm-7">
+					<!-- ABOUT TITLE -->
 					<h2 class="section__title">OUR STORY</h2>
+					<!-- ABOUT PARAGRAPH -->
 					<p class="section__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+					<!-- ABOUT PARAGRAPH -->
 					<p class="section__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+					<!-- ABOUT BUTTON -->
 					<button class="btn">LEARN MORE</button>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<!-- VIDEO -->
 	<section class="video">
 		<div class="container-fluid">
@@ -146,12 +152,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
+					<!-- EXPERTISE TITLE -->
 					<h2 class="section__title">EXPERTISE</h2>
 					<span class="section__desc">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
 					<div class="separator"></div>
 				</div>
 			</div>
 			<div class="row top-items">
+				<!-- EXPERTISE ITEM 1 -->
 				<div class="col-sm-4">
 					<div class="section-item left-item">
 						<img src="../img/expertise/ex-img1.svg" class="section-item__img">
@@ -159,6 +167,7 @@
 						<p class="section-item__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 					</div>
 				</div>
+				<!-- EXPERTISE ITEM 2 -->
 				<div class="col-sm-4">
 					<div class="section-item center-item">
 						<img src="../img/expertise/ex-img2.svg" class="section-item__img">
@@ -166,6 +175,7 @@
 						<p class="section-item__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 					</div>
 				</div>
+				<!-- EXPERTISE ITEM 3 -->
 				<div class="col-sm-4">
 					<div class="section-item right-item">
 						<img src="../img/expertise/ex-img3.svg" class="section-item__img">
@@ -175,6 +185,7 @@
 				</div>
 			</div>
 			<div class="row">
+				<!-- EXPERTISE ITEM 4 -->
 				<div class="col-sm-4">
 					<div class="section-item left-item">
 						<img src="../img/expertise/ex-img4.svg" class="section-item__img">
@@ -182,6 +193,7 @@
 						<p class="section-item__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 					</div>
 				</div>
+				<!-- EXPERTISE ITEM 5 -->
 				<div class="col-sm-4">
 					<div class="section-item center-item">
 						<img src="../img/expertise/ex-img5.svg" class="section-item__img">
@@ -189,6 +201,7 @@
 						<p class="section-item__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 					</div>
 				</div>
+				<!-- EXPERTISE ITEM 6 -->
 				<div class="col-sm-4">
 					<div class="section-item right-item">
 						<img src="../img/expertise/ex-img6.svg" class="section-item__img">
@@ -205,6 +218,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
+					<!-- TEAM TITLE -->
 					<h2 class="section__title">MEET OUR AMAZING TEAM</h2>
 					<span class="section__desc">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
 					<div class="separator"></div>
@@ -212,6 +226,7 @@
 			</div>
 			<div class="row">
 				<div class=" col-sm-6 col-md-3">
+					<!-- TEAM ITEM 1 -->
 					<div class="section-item">
 						<div class="section-item__img"></div>
 						<h5 class="section-item__title">SEMF UCUK</h5>
@@ -219,6 +234,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
+					<!-- TEAM ITEM 2 -->
 					<div class="section-item">
 						<div class="section-item__img"></div>
 						<h5 class="section-item__title">DIK ADALIN</h5>
@@ -226,6 +242,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
+					<!-- TEAM ITEM 3 -->
 					<div class="section-item">
 						<div class="section-item__img"></div>
 						<h5 class="section-item__title">JENG KOL</h5>
@@ -233,6 +250,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
+					<!-- TEAM ITEM 4 -->
 					<div class="section-item">
 						<div class="section-item__img"></div>
 						<h5 class="section-item__title">PET ROMAK</h5>
@@ -261,22 +279,22 @@
 				</div>
 			</div>
 			<div id="owl-1">
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-1.jpg">
 				</div>
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-2.jpg">
 				</div>
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-3.jpg">
 				</div>
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-4.jpg">
 				</div>
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-5.jpg">
 				</div>
-				<div class=" item">
+				<div class="item">
 					<img class="works-item" src="img/works/work-6.jpg">
 				</div>
 			</div>
@@ -334,7 +352,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
+					<!-- CONTACT TITLE -->
 					<h2 class="section__title">GIVE US A GOOD NEWS</h2>
+					<!-- CONTACT FORM -->
 					<form action="#" id="contatc-form">
 						<input type="text" id="name" placeholder="Name" required tabindex="1">
 						<input type="text" id="email" placeholder="Email" required tabindex="2">
@@ -344,6 +364,7 @@
 					</form>
 				</div>
 				<div class="col-md-5 col-md-offset-1 trands">
+					<!-- CLIENTS -->
 					<h2 class="section__title">OUR HAPPY CLIENT</h2>
 						<ul class="left-list">
 							<li><img src="img/contact/zara.svg" alt=""></li>
@@ -379,6 +400,7 @@
 					</p>
 				</div>
 				<div class="col-sm-4">
+					<!-- ADRESS AND PHONE INFO -->
 					<h5 class="footer-title">OUR STUDIO</h5>
 					<a class="adress" href="#">Ruko cucruk, Jl. Radio luar dalem jos<br/> No.12 - 13, Kalideres - Jakarta Barat <br/> 11480 - Indonesia</a>
 						<a href="#" class="tel">(+62) 21-2224 3333</a>
@@ -389,6 +411,7 @@
 						<input type="text" class="subscribe" placeholder="Subscribe our newsletter">
 						<button type="submit"></button>
 					</form>
+					<!-- SOCIAL ICONS -->
 					<div class="social-icons">
 						<a href="#" class="social fb"></a>
 						<a href="#" class="social tw"></a>
@@ -429,9 +452,10 @@
 	<script src="bower/waypoints/lib/noframework.waypoints.js"></script>
 	<script src="bower/matchHeight/jquery.matchHeight-min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
-	<script src="bower/wow/dist/wow.min.js"></script>
 	<!-- endbower -->
 	<script src="bower/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script src="bower/wow/dist/wow.min.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<!-- endbuild -->
 	<!-- build:js js/common.min.js -->
 	<script src="js/common.js"></script>

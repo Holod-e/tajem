@@ -45,6 +45,24 @@ $(document).ready(function() {
       itemsDesktopSmall : [979,3]
   });
 
+	//плавный переход по якорю
+	$("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+	
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
 
 	//Check
 	console.log('Done!');
