@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	new WOW().init();
+
+
+	$('#about .section__title').addClass("slideInRight wow ");
+	$('#about .section__text').addClass("slideInRight wow ");
+	$('.section__title, .section__desc').addClass("fadeInDown wow ");
+	$('.left-item').addClass("fadeInLeft wow");
+	$('.right-item').addClass("fadeInRight wow");
+	$('.center-item').addClass("fadeInDown wow");
+	$('.citate').addClass("flipInX wow");
+	$('#team .section-item').addClass("fadeInUp wow");
+
 	//слайдер фона хедера сайта
 	$('#bg1').click(function() {
 		$(".dotnav .active").removeClass("active");
@@ -27,20 +39,17 @@ $(document).ready(function() {
 	});
 	//карусель
 	$("#owl-1, #owl-2").owlCarousel({
-
       autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
       items : 6,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
-
   });
 
-	//slider scale
-	
 
 	//Check
 	console.log('Done!');
+
+
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
@@ -52,9 +61,6 @@ $(document).ready(function() {
 	//jquery.matchHeight.js
 	//Docs: https://github.com/liabru/jquery-match-height
 	$('element').matchHeight();
-	
-	//Carousel: http://owlgraphic.com/owlcarousel/
-	$("#owl-example").owlCarousel();
 
 	//BPopUp windows
 	//Docs: http://dinbror.dk/bpopup/
